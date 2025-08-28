@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "JobBoardSample.Api/1.0.0": {
+        "dependencies": {
+          "JobBoardSample.Shared": "1.0.0"
+        },
+        "runtime": {
+          "JobBoardSample.Api.dll": {}
+        }
+      },
+      "JobBoardSample.Shared/1.0.0": {
+        "runtime": {
+          "JobBoardSample.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JobBoardSample.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JobBoardSample.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
