@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.MauiApp\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\JobBoardSample.MauiApp.styles.css",
+      "PackagePath": "staticwebassets\\JobBoardSample.MauiApp.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.MauiApp\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.MauiApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.MauiApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.MauiApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.MauiApp\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.JobBoardSample.MauiApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.JobBoardSample.MauiApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.build.JobBoardSample.MauiApp.props",
+      "PackagePath": "build\\JobBoardSample.MauiApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildMultiTargeting.JobBoardSample.MauiApp.props",
+      "PackagePath": "buildMultiTargeting\\JobBoardSample.MauiApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildTransitive.JobBoardSample.MauiApp.props",
+      "PackagePath": "buildTransitive\\JobBoardSample.MauiApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
