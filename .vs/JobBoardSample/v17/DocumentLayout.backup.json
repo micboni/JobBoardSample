@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7EB8AE68-F9C4-40E9-AE5B-5490A1DC4D44}|JobBoardSample.Shared\\JobBoardSample.Shared.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.shared\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EB8AE68-F9C4-40E9-AE5B-5490A1DC4D44}|JobBoardSample.Shared\\JobBoardSample.Shared.csproj|solutionrelative:jobboardsample.shared\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EB8AE68-F9C4-40E9-AE5B-5490A1DC4D44}|JobBoardSample.Shared\\JobBoardSample.Shared.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.shared\\applications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EB8AE68-F9C4-40E9-AE5B-5490A1DC4D44}|JobBoardSample.Shared\\JobBoardSample.Shared.csproj|solutionrelative:jobboardsample.shared\\applications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EB8AE68-F9C4-40E9-AE5B-5490A1DC4D44}|JobBoardSample.Shared\\JobBoardSample.Shared.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.shared\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EB8AE68-F9C4-40E9-AE5B-5490A1DC4D44}|JobBoardSample.Shared\\JobBoardSample.Shared.csproj|solutionrelative:jobboardsample.shared\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EEEAE11C-0C6F-4049-9A32-20081EB9E2D0}|JobBoardSample.MauiApp\\JobBoardSample.MauiApp.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.mauiapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,19 +27,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.Shared\\Class1.cs",
-              "RelativeDocumentMoniker": "JobBoardSample.Shared\\Class1.cs",
-              "ToolTip": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.Shared\\Class1.cs",
-              "RelativeToolTip": "JobBoardSample.Shared\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "Applications.cs",
+              "DocumentMoniker": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.Shared\\Applications.cs",
+              "RelativeDocumentMoniker": "JobBoardSample.Shared\\Applications.cs",
+              "ToolTip": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.Shared\\Applications.cs",
+              "RelativeToolTip": "JobBoardSample.Shared\\Applications.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T07:43:38.754Z",
+              "WhenOpened": "2025-08-28T08:32:00.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Position.cs",
+              "DocumentMoniker": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.Shared\\Position.cs",
+              "RelativeDocumentMoniker": "JobBoardSample.Shared\\Position.cs",
+              "ToolTip": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.Shared\\Position.cs",
+              "RelativeToolTip": "JobBoardSample.Shared\\Position.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T07:54:22.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.MauiApp\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "JobBoardSample.MauiApp\\Components\\Pages\\Home.razor",
@@ -43,8 +60,7 @@
               "RelativeToolTip": "JobBoardSample.MauiApp\\Components\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-27T15:24:02.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T15:24:02.919Z"
             }
           ]
         },

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace JobBoardSample.Shared
 {
+    //POSIZIONI
     public class Position
     {
         public int Id {  get; set; }
