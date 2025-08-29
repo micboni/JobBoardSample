@@ -12,7 +12,10 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Repositories\PositionsProvider.cs" />
   </ItemGroup>
 
 </Project>

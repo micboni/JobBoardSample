@@ -1,0 +1,182 @@
+[
+  {
+    "Id": 1,
+    "Title": "Backend Developer",
+    "Department": "IT",
+    "Location": "Milano",
+    "SalaryRangeMin": 32000,
+    "SalaryRangeMax": 42000,
+    "PublishedAtUtc": "2025-08-01T09:00:00Z"
+  },
+  {
+    "Id": 2,
+    "Title": "Frontend Developer",
+    "Department": "IT",
+    "Location": "Bologna",
+    "SalaryRangeMin": 30000,
+    "SalaryRangeMax": 40000,
+    "PublishedAtUtc": "2025-08-02T10:00:00Z"
+  },
+  {
+    "Id": 3,
+    "Title": "System Administrator",
+    "Department": "Infrastructure",
+    "Location": "Roma",
+    "SalaryRangeMin": 35000,
+    "SalaryRangeMax": 45000,
+    "PublishedAtUtc": "2025-08-03T08:30:00Z"
+  },
+  {
+    "Id": 4,
+    "Title": "Mobile App Developer",
+    "Department": "IT",
+    "Location": "Torino",
+    "SalaryRangeMin": 32000,
+    "SalaryRangeMax": 42000,
+    "PublishedAtUtc": "2025-08-04T14:15:00Z"
+  },
+  {
+    "Id": 5,
+    "Title": "Data Engineer",
+    "Department": "Data",
+    "Location": "Milano",
+    "SalaryRangeMin": 38000,
+    "SalaryRangeMax": 50000,
+    "PublishedAtUtc": "2025-08-05T11:00:00Z"
+  },
+  {
+    "Id": 6,
+    "Title": "QA Tester",
+    "Department": "Quality Assurance",
+    "Location": "Napoli",
+    "SalaryRangeMin": 26000,
+    "SalaryRangeMax": 32000,
+    "PublishedAtUtc": "2025-08-06T09:45:00Z"
+  },
+  {
+    "Id": 7,
+    "Title": "DevOps Engineer",
+    "Department": "Infrastructure",
+    "Location": "Roma",
+    "SalaryRangeMin": 40000,
+    "SalaryRangeMax": 55000,
+    "PublishedAtUtc": "2025-08-07T13:00:00Z"
+  },
+  {
+    "Id": 8,
+    "Title": "UX/UI Designer",
+    "Department": "Design",
+    "Location": "Firenze",
+    "SalaryRangeMin": 28000,
+    "SalaryRangeMax": 38000,
+    "PublishedAtUtc": "2025-08-08T10:30:00Z"
+  },
+  {
+    "Id": 9,
+    "Title": "Business Analyst",
+    "Department": "Business",
+    "Location": "Torino",
+    "SalaryRangeMin": 34000,
+    "SalaryRangeMax": 46000,
+    "PublishedAtUtc": "2025-08-09T15:00:00Z"
+  },
+  {
+    "Id": 10,
+    "Title": "Technical Writer",
+    "Department": "Documentation",
+    "Location": "Genova",
+    "SalaryRangeMin": 27000,
+    "SalaryRangeMax": 34000,
+    "PublishedAtUtc": "2025-08-10T08:00:00Z"
+  },
+  {
+    "Id": 11,
+    "Title": "Security Specialist",
+    "Department": "Cybersecurity",
+    "Location": "Milano",
+    "SalaryRangeMin": 42000,
+    "SalaryRangeMax": 60000,
+    "PublishedAtUtc": "2025-08-11T12:20:00Z"
+  },
+  {
+    "Id": 12,
+    "Title": "AI Engineer",
+    "Department": "Innovation",
+    "Location": "Trento",
+    "SalaryRangeMin": 45000,
+    "SalaryRangeMax": 65000,
+    "PublishedAtUtc": "2025-08-12T09:10:00Z"
+  },
+  {
+    "Id": 13,
+    "Title": "Scrum Master",
+    "Department": "Agile Office",
+    "Location": "Roma",
+    "SalaryRangeMin": 38000,
+    "SalaryRangeMax": 50000,
+    "PublishedAtUtc": "2025-08-13T16:40:00Z"
+  },
+  {
+    "Id": 14,
+    "Title": "HR Specialist",
+    "Department": "Human Resources",
+    "Location": "Milano",
+    "SalaryRangeMin": 28000,
+    "SalaryRangeMax": 35000,
+    "PublishedAtUtc": "2025-08-14T09:50:00Z"
+  },
+  {
+    "Id": 15,
+    "Title": "Cloud Architect",
+    "Department": "Infrastructure",
+    "Location": "Roma",
+    "SalaryRangeMin": 55000,
+    "SalaryRangeMax": 75000,
+    "PublishedAtUtc": "2025-08-15T07:30:00Z"
+  },
+  {
+    "Id": 16,
+    "Title": "Customer Support Specialist",
+    "Department": "Support",
+    "Location": "Bari",
+    "SalaryRangeMin": 24000,
+    "SalaryRangeMax": 30000,
+    "PublishedAtUtc": "2025-08-16T13:15:00Z"
+  },
+  {
+    "Id": 17,
+    "Title": "Marketing Specialist",
+    "Department": "Marketing",
+    "Location": "Roma",
+    "SalaryRangeMin": 28000,
+    "SalaryRangeMax": 36000,
+    "PublishedAtUtc": "2025-08-17T10:10:00Z"
+  },
+  {
+    "Id": 18,
+    "Title": "Sales Manager",
+    "Department": "Sales",
+    "Location": "Milano",
+    "SalaryRangeMin": 45000,
+    "SalaryRangeMax": 65000,
+    "PublishedAtUtc": "2025-08-18T09:00:00Z"
+  },
+  {
+    "Id": 19,
+    "Title": "Product Owner",
+    "Department": "Product",
+    "Location": "Torino",
+    "SalaryRangeMin": 42000,
+    "SalaryRangeMax": 58000,
+    "PublishedAtUtc": "2025-08-19T11:30:00Z"
+  },
+  {
+    "Id": 20,
+    "Title": "Junior Developer",
+    "Department": "IT",
+    "Location": "Napoli",
+    "SalaryRangeMin": 24000,
+    "SalaryRangeMax": 30000,
+    "PublishedAtUtc": "2025-08-20T14:45:00Z"
+  }
+]

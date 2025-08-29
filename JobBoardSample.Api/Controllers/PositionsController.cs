@@ -1,5 +1,6 @@
 ﻿using JobBoardSample.Shared;
 using Microsoft.AspNetCore.Mvc;
+using JobBoardSample.Api.Repositories;
 
 namespace JobBoardSample.Api.Controllers
 {
@@ -8,13 +9,12 @@ namespace JobBoardSample.Api.Controllers
     [Route("api/[controller]")]
     public class PositionsController : ControllerBase
     {
-        //TEMPORANEO PER TEST
-        private readonly List<Position> _positions = new()
-        {
-            new Position { Id = 1, Title = "Backend Developer", Department = "Engineering", Location = "Milano" },
-            new Position { Id = 2, Title = "Frontend Developer", Department = "Engineering", Location = "Roma" }
-        };
+        private readonly PositionsProvider _repository;
 
+        public PositionsController()
+        {
+            _repository = new PositionsProvider();
+        }
 
         //https://localhost:7290/api/positions
         [HttpGet]
@@ -23,8 +23,13 @@ namespace JobBoardSample.Api.Controllers
             [FromQuery] string? location, [FromQuery] int page = 1, 
             [FromQuery] int pageSize = 10)
         {
-            //filtri
-            return Ok(new List<Position>());
+            var positions = _repository.GetAllPositions();
+
+            var total = positions.Count();
+            var items = positions.Skip((page - 1) * pageSize).Take(pageSize);
+
+
+            return Ok(new {items, total, page, pageSize});
 
         }
 
@@ -32,14 +37,15 @@ namespace JobBoardSample.Api.Controllers
         [HttpGet("{id}")]
         public ActionResult<Position> GetPositionById(int id)
         {
-            foreach (Position position in _positions)
+
+            var position = _repository.GetPositionById(id);
+
+            if (position == null)
             {
-                if (position.Id == id)
-                {
-                    return Ok(position);
-                }
+                return NotFound();
             }
-            return NotFound();
+
+            return Ok(position);
         }
 
     }

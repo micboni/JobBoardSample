@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "JobBoardSample.Api.Controllers.ApplicationsController",
+    "Method": "PostApplication",
+    "RelativePath": "api/Applications",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "application",
+        "Type": "JobBoardSample.Shared.Applications",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "JobBoardSample.Api.Controllers.PositionsController",
     "Method": "GetPosition",
     "RelativePath": "api/Positions",

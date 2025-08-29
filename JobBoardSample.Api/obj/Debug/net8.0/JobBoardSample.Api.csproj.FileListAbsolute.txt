@@ -31,3 +31,5 @@ C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Api\obj
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Api\obj\Debug\net8.0\JobBoardSample.Api.pdb
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Api\obj\Debug\net8.0\JobBoardSample.Api.genruntimeconfig.cache
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Api\obj\Debug\net8.0\ref\JobBoardSample.Api.dll
+C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Api\bin\Debug\net8.0\Data\applications.json
+C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Api\bin\Debug\net8.0\Data\positions.json
