@@ -1,10 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using JobBoardSample.Shared;
 
 namespace JobBoardSample.Api.Controllers
 {
-    public class ApplicationController : Controller
+    [ApiController]
+    //https://localhost:7290/api/application
+    [Route("api/[controller]")]
+    public class ApplicationsController : Controller
     {
-        public IActionResult Index()
+
+        [HttpPost]
+        public IActionResult PostApplication([FromBody] Applications application)
         {
             return View();
         }
