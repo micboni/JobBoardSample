@@ -1,6 +1,7 @@
 ﻿@page "/"
 @using JobBoardSample.Shared.Components
 @using JobBoardSample.Shared
+@using Microsoft.VisualBasic
 
 <PageTitle>Home</PageTitle>
 
@@ -25,14 +26,16 @@
         </select>
     </div>
     <div class="cards-container">
+
         <PositionCard />
+
     </div>
 </div>
 
 
 
-
 @code {
+
     private string? selectedDepartment = "";
     private string? selectedLocality = "";
     public string searchText = "";
