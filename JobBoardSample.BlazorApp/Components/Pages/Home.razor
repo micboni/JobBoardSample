@@ -1,7 +1,40 @@
 ﻿@page "/"
+@using JobBoardSample.Shared.Components
+@using JobBoardSample.Shared
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="main-container">
+    <div class="top-bar">
+        <input type="text" placeholder="Cerca annuncio..." class="search-box" @bind="searchText">
 
-Welcome to your new app.
+        <select class="filters-selected" @bind="selectedLocality">
+            <option value="">Località</option>
+            @foreach (var dep in Localities.All)
+            {
+                <option value="@dep">@dep</option>
+            }
+        </select>
+
+        <select class="filters-selected" @bind="selectedDepartment">
+            <option value="">Reparto</option>
+            @foreach (var dep in Departments.All)
+            {
+                <option value="@dep">@dep</option>
+            }
+        </select>
+    </div>
+    <div class="cards-container">
+        <PositionCard />
+    </div>
+</div>
+
+
+
+
+@code {
+    private string? selectedDepartment = "";
+    private string? selectedLocality = "";
+    public string searchText = "";
+
+}

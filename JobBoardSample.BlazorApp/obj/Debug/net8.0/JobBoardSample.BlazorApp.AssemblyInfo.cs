@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobBoardSample.BlazorApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93450e04f8c905cadf809cd6ad0afd05695497e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5004c8a5553dbc15ba097cbeb050fb68813dd4e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobBoardSample.BlazorApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobBoardSample.BlazorApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

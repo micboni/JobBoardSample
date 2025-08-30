@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{A7112182-FE22-4958-9A81-7F0103433851}|JobBoardSample.Api\\JobBoardSample.Api.csproj|solutionrelative:jobboardsample.api\\controllers\\applicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7112182-FE22-4958-9A81-7F0103433851}|JobBoardSample.Api\\JobBoardSample.Api.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.api\\repositories\\applicationsprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7112182-FE22-4958-9A81-7F0103433851}|JobBoardSample.Api\\JobBoardSample.Api.csproj|solutionrelative:jobboardsample.api\\repositories\\applicationsprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.blazorapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|solutionrelative:jobboardsample.blazorapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7112182-FE22-4958-9A81-7F0103433851}|JobBoardSample.Api\\JobBoardSample.Api.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.api\\repositories\\positionsprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7112182-FE22-4958-9A81-7F0103433851}|JobBoardSample.Api\\JobBoardSample.Api.csproj|solutionrelative:jobboardsample.api\\repositories\\positionsprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7112182-FE22-4958-9A81-7F0103433851}|JobBoardSample.Api\\JobBoardSample.Api.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.api\\repositories\\applicationsprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7112182-FE22-4958-9A81-7F0103433851}|JobBoardSample.Api\\JobBoardSample.Api.csproj|solutionrelative:jobboardsample.api\\repositories\\applicationsprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.BlazorApp\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "JobBoardSample.BlazorApp\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.BlazorApp\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "JobBoardSample.BlazorApp\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-29T17:17:43.147Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -36,23 +53,22 @@
               "RelativeDocumentMoniker": "JobBoardSample.Api\\Controllers\\ApplicationController.cs",
               "ToolTip": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.Api\\Controllers\\ApplicationController.cs",
               "RelativeToolTip": "JobBoardSample.Api\\Controllers\\ApplicationController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAArwBcAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAnwCEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-29T15:37:37.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ApplicationsProvider.cs",
               "DocumentMoniker": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.Api\\Repositories\\ApplicationsProvider.cs",
               "RelativeDocumentMoniker": "JobBoardSample.Api\\Repositories\\ApplicationsProvider.cs",
               "ToolTip": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.Api\\Repositories\\ApplicationsProvider.cs",
               "RelativeToolTip": "JobBoardSample.Api\\Repositories\\ApplicationsProvider.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBQwBcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T15:22:07.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-29T15:22:07.352Z"
             },
             {
               "$type": "Document",
@@ -62,10 +78,9 @@
               "RelativeDocumentMoniker": "JobBoardSample.Api\\Repositories\\PositionsProvider.cs",
               "ToolTip": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.Api\\Repositories\\PositionsProvider.cs",
               "RelativeToolTip": "JobBoardSample.Api\\Repositories\\PositionsProvider.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAcwBQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T13:08:56.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-29T13:08:56.887Z"
             }
           ]
         }

@@ -31,7 +31,7 @@ namespace JobBoardSample.Api.Controllers
             //controllo se la posizione esiste
 
             //aggiungo nuova candidatura
-        
+            return Ok(request);
         }
     }
 }

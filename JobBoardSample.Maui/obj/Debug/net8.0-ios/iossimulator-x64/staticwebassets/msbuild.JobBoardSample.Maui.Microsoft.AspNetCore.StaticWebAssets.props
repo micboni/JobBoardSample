@@ -112,12 +112,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>2wlrn9l21l</Fingerprint>
-      <Integrity>bk3BTDz8SDXVuniHj4UdqAbEpfYMzMEqPPYuXUnzn4s=</Integrity>
+      <Fingerprint>f6u5oivilv</Fingerprint>
+      <Integrity>BzgPhBixPjh3MFWeCZLU3Y4bgGijjUSSM/ZGevbuqB0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>5481</FileLength>
-      <LastWriteTime>Fri, 29 Aug 2025 10:39:09 GMT</LastWriteTime>
+      <FileLength>5574</FileLength>
+      <LastWriteTime>Sat, 30 Aug 2025 12:52:54 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JobBoardSample.Maui.styles.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
