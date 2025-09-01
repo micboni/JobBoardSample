@@ -21,7 +21,7 @@ namespace JobBoardSample.Api.Controllers
         public ActionResult<IEnumerable<Position>> GetPosition(
             [FromQuery] string? search, [FromQuery] string? department, 
             [FromQuery] string? location, [FromQuery] int page = 1, 
-            [FromQuery] int pageSize = 10)
+            [FromQuery] int pageSize = 12)
         {
             var positions = _repository.GetAllPositions();
 

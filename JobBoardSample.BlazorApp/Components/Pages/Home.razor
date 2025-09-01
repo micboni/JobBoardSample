@@ -28,13 +28,17 @@
     </div>
     <div class="cards-container">
 
-        @if(ListPosition == null)
+        @if (ListPosition == null)
         {
             <p>Caricamento posizioni...</p>
         }
+        else if (!FilteredPositions().Any())
+        {
+            <p>Nessuna poszione lavorativa trovata.</p>
+        }
         else
         {
-            @foreach (var pos in ListPosition)
+            @foreach (var pos in FilteredPositions())
             {
                 <PositionCard position="pos" OnClick="HandleCardClick" />
             }
@@ -76,6 +80,25 @@
     {
         var response = await Http.GetFromJsonAsync<PositionsResponse>("https://localhost:7290/api/positions");
         ListPosition = response?.Items ?? new List<Position>();
+    }
+
+    private IEnumerable<Position> FilteredPositions()
+    {
+        if (ListPosition == null)
+            return Enumerable.Empty<Position>();
+
+        var query = ListPosition.AsEnumerable();
+
+        if (!string.IsNullOrWhiteSpace(searchText))
+            query = query.Where(p => p.Title.Contains(searchText, StringComparison.OrdinalIgnoreCase));
+
+        if (!string.IsNullOrWhiteSpace(selectedDepartment))
+            query = query.Where(p => p.Department == selectedDepartment);
+
+        if (!string.IsNullOrWhiteSpace(selectedLocality))
+            query = query.Where(p => p.Location == selectedLocality);
+
+        return query;
     }
 
 }

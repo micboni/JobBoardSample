@@ -60,17 +60,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ud02n0o4c8"},{"Name":"integrity","Value":"sha256-jpoyQUSegpmVnZWz1S4/KX\u002Bb70/77IM6F1MgJ7IxwQI="},{"Name":"label","Value":"index.html"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"895"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022jpoyQUSegpmVnZWz1S4/KX\u002Bb70/77IM6F1MgJ7IxwQI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 29 Aug 2025 08:42:32 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="JobBoardSample.Maui.f6u5oivilv.styles.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JobBoardSample.Maui.styles.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f6u5oivilv"},{"Name":"integrity","Value":"sha256-BzgPhBixPjh3MFWeCZLU3Y4bgGijjUSSM/ZGevbuqB0="},{"Name":"label","Value":"JobBoardSample.Maui.styles.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5574"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BzgPhBixPjh3MFWeCZLU3Y4bgGijjUSSM/ZGevbuqB0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 30 Aug 2025 12:52:54 GMT"},{"Name":"Link","Value":"\u003C_content/JobBoardSample.Shared/JobBoardSample.Shared.vreaysrt9p.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="JobBoardSample.Maui.styles.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JobBoardSample.Maui.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BzgPhBixPjh3MFWeCZLU3Y4bgGijjUSSM/ZGevbuqB0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5574"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BzgPhBixPjh3MFWeCZLU3Y4bgGijjUSSM/ZGevbuqB0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 30 Aug 2025 12:52:54 GMT"},{"Name":"Link","Value":"\u003C_content/JobBoardSample.Shared/JobBoardSample.Shared.vreaysrt9p.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JFWA/juYqsbM\u002BVrAgK6sA9K7DeZpLMnF1kgP2G7k6TE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5574"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JFWA/juYqsbM\u002BVrAgK6sA9K7DeZpLMnF1kgP2G7k6TE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 01 Sep 2025 10:36:20 GMT"},{"Name":"Link","Value":"\u003C_content/JobBoardSample.Shared/JobBoardSample.Shared.rj2vdegm0v.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="JobBoardSample.Maui.wvee4th14u.styles.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JobBoardSample.Maui.styles.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wvee4th14u"},{"Name":"integrity","Value":"sha256-JFWA/juYqsbM\u002BVrAgK6sA9K7DeZpLMnF1kgP2G7k6TE="},{"Name":"label","Value":"JobBoardSample.Maui.styles.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5574"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JFWA/juYqsbM\u002BVrAgK6sA9K7DeZpLMnF1kgP2G7k6TE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 01 Sep 2025 10:36:20 GMT"},{"Name":"Link","Value":"\u003C_content/JobBoardSample.Shared/JobBoardSample.Shared.rj2vdegm0v.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>
