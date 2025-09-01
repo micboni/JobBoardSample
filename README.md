@@ -1,0 +1,39 @@
+STRUTTURA PROGETTO
+1.JobBoardSample.Api
+2.JobBoardSample.BlazorApp
+3.JobBoardSample.Maui
+4.JobBoardSample.Shared
+
+
+1.JobBoardSample.Api
+il progetto è suddiviso in:
+- Controllers -> Espongo API a cui il front può fare richieste HTTP
+- Data -> Due file JSON dove sono salvati i dati
+- Repositories -> Contiene due classi che leggono i dati dai file JSON e li convertono in liste, in modo da poterle utilizzare nella nostra applicazione.
+
+
+2.JobBoardSample.BlazorApp
+Progetto creato per poter programmare un interfaccia web in blazor.
+il file principale che descrive il front è Home.razor,
+questo file descrive la pagina principale dell'applicazione, con una searchbox, filters e delle cards che rappresentano le posizioni lavorative aperte.
+
+
+3.JobBoardSample.Maui
+
+
+4.JobBoardSample.Shared
+La tipologia di questo progetto è un razor class library, necessario per condividere codice tra BlazorApp e MAUI.
+
+Classi comuni nel progetto che ricprono il ruolo di Models
+- Applcations
+- Positions
+
+DTO
+Creato per la paginazione lato server
+- PositionsResponse
+
+Liste per select e options nel front
+-Localities
+-Departments
+
+
