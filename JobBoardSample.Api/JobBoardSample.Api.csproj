@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\JobBoardSample.Shared\JobBoardSample.Shared.csproj" />
-    <ProjectReference Include="..\RazorClassLibrary1.Shared\JobBoardSample.Shared.csproj" />
   </ItemGroup>
 
 </Project>

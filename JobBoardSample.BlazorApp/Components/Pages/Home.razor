@@ -2,6 +2,7 @@
 @using JobBoardSample.Shared.Components
 @using JobBoardSample.Shared
 @using Microsoft.VisualBasic
+@inject HttpClient Http
 
 <PageTitle>Home</PageTitle>
 
@@ -11,9 +12,9 @@
 
         <select class="filters-selected" @bind="selectedLocality">
             <option value="">Località</option>
-            @foreach (var dep in Localities.All)
+            @foreach (var loc in Localities.All)
             {
-                <option value="@dep">@dep</option>
+                <option value="@loc">@loc</option>
             }
         </select>
 
@@ -27,9 +28,30 @@
     </div>
     <div class="cards-container">
 
-        <PositionCard />
-
+        @if(ListPosition == null)
+        {
+            <p>Caricamento posizioni...</p>
+        }
+        else
+        {
+            @foreach (var pos in ListPosition)
+            {
+                <PositionCard position="pos" OnClick="HandleCardClick" />
+            }
+        }
     </div>
+
+    @if (selectedPosition is not null)
+    {
+        <div class="overlay">
+            <div class="overlay-content">
+                <h3>@selectedPosition.Title</h3>
+                <p><strong>Dipartimento:</strong> @selectedPosition.Department</p>
+                <p><strong>Località:</strong> @selectedPosition.Location</p>
+                <button @onclick="() => selectedPosition = null">Chiudi</button>
+            </div>
+        </div>
+    }
 </div>
 
 
@@ -38,6 +60,22 @@
 
     private string? selectedDepartment = "";
     private string? selectedLocality = "";
-    public string searchText = "";
+    private string searchText = "";
+
+    private bool showOverlay = false;
+    private Position? selectedPosition;
+
+    private List<Position>? ListPosition;
+
+    private void HandleCardClick(Position pos)
+    {
+        selectedPosition = pos;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await Http.GetFromJsonAsync<PositionsResponse>("https://localhost:7290/api/positions");
+        ListPosition = response?.Items ?? new List<Position>();
+    }
 
 }

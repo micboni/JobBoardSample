@@ -1,4 +1,4 @@
-@import '_content/JobBoardSample.Shared/JobBoardSample.Shared.vreaysrt9p.bundle.scp.css';
+@import '_content/JobBoardSample.Shared/JobBoardSample.Shared.rj2vdegm0v.bundle.scp.css';
 
 /* _content/JobBoardSample.BlazorApp/Components/Layout/MainLayout.razor.rz.scp.css */
 .page[b-lu403d6kra] {
@@ -143,4 +143,20 @@ main[b-lu403d6kra] {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+}
+
+.overlay[b-gor20um5ro] {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content[b-gor20um5ro] {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
 }

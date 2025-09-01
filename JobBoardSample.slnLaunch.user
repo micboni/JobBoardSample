@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Start Application",
+    "Projects": [
+      {
+        "Path": "JobBoardSample.Api\\JobBoardSample.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

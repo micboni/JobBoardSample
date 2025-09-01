@@ -1,20 +1,23 @@
-﻿<div class="position-card">
+﻿<div class="position-card" @onclick="HandleClick">
     <h4>@position.Title</h4>
     <p><strong>Dipartimento:</strong> @position.Department</p>
     <p><strong>Località:</strong> @position.Location</p>
     <p><strong>Stipendio:</strong> @position.SalaryRangeMin € - @position.SalaryRangeMax</p>
     <p><small>Pubblicata:</small> <small> @position.PublishedAtUtc.ToShortDateString() </small></p>
-    <button @onclick="ApplyClicked">Candidati</button>
 </div>
 
 @code {
     [Parameter]
     public Position position { get; set; } = new();
 
-    void ApplyClicked()
-    {
+    [Parameter]
+    public EventCallback<Position> OnClick { get; set; }
 
+    private async Task HandleClick()
+    {
+        if (OnClick.HasDelegate)
+            await OnClick.InvokeAsync(position);
     }
 
-    //evento click
+
 }
