@@ -1,5 +1,142 @@
 ﻿@page "/"
+@using JobBoardSample.Shared.Components
+@using JobBoardSample.Shared
+@using JobBoardSample.Shared.DTO
+@inject HttpClient Http
 
-<h1>Hello, world!</h1>
+<PageTitle>Home</PageTitle>
 
-Welcome to your new app.
+<div class="main-container">
+    <div class="top-bar">
+        <input type="text" placeholder="Cerca annuncio..." class="search-box" @bind="searchText">
+    </div>
+    <div class="filters-container">
+        <select class="filters-selected" @bind="selectedLocality">
+            <option value="">Località</option>
+            @foreach (var loc in Localities.All)
+            {
+                <option value="@loc">@loc</option>
+            }
+        </select>
+
+        <select class="filters-selected" @bind="selectedDepartment">
+            <option value="">Reparto</option>
+            @foreach (var dep in Departments.All)
+            {
+                <option value="@dep">@dep</option>
+            }
+        </select>
+    </div>
+    
+    
+    @*<div class="cards-container">
+
+        @if (ListPosition == null)
+        {
+            <p>Caricamento posizioni...</p>
+        }
+        else if (!FilteredPositions().Any())
+        {
+            <p>Nessuna poszione lavorativa trovata.</p>
+        }
+        else
+        {
+            @foreach (var pos in FilteredPositions())
+            {
+                <PositionCard position="pos" OnClick="HandleCardClick" />
+            }
+        }
+    </div>
+
+    @if (selectedPosition is not null)
+    {
+        <div class="overlay">
+            <div class="overlay-content">
+                <h3>@selectedPosition.Title</h3>
+                <p><strong>Dipartimento:</strong> @selectedPosition.Department</p>
+                <p><strong>Località:</strong> @selectedPosition.Location</p>
+                <button @onclick="() => selectedPosition = null">Chiudi</button>
+                <button @onclick="() => selectedPosition = null">Invia Candidatura</button>
+            </div>
+        </div>
+    }
+    *@
+</div>
+
+
+
+@code {
+
+    #region Variabili
+    private string? selectedDepartment = "";
+    private string? selectedLocality = "";
+    private string searchText = "";
+    private Position? selectedPosition;
+    private List<Position>? ListPosition;
+    #endregion
+
+    //SELEZIONE CARD
+    private void HandleCardClick(Position pos)
+    {
+        selectedPosition = pos;
+    }
+
+    //CARICAMENTO INIZIALE DATI NELLE CARDS
+    protected override void OnInitialized()
+    {
+        // Lista statica per test
+        ListPosition = new List<Position>
+        {
+            new Position
+            {
+                Id = 1,
+                Title = "Sviluppatore C#",
+                Department = "IT",
+                Location = "Milano",
+                SalaryRangeMin = 2000,
+                SalaryRangeMax = 3000,
+                PublishedAtUtc = DateTime.UtcNow.AddDays(-3)
+            },
+            new Position
+            {
+                Id = 2,
+                Title = "Graphic Designer",
+                Department = "Design",
+                Location = "Roma",
+                SalaryRangeMin = 1800,
+                SalaryRangeMax = 2500,
+                PublishedAtUtc = DateTime.UtcNow.AddDays(-5)
+            },
+            new Position
+            {
+                Id = 3,
+                Title = "Project Manager",
+                Department = "Management",
+                Location = "Torino",
+                SalaryRangeMin = 2500,
+                SalaryRangeMax = 4000,
+                PublishedAtUtc = DateTime.UtcNow.AddDays(-1)
+            }
+        };
+    }
+
+    //FILTRAGGIO LATO FRONT
+    private IEnumerable<Position> FilteredPositions()
+    {
+        if (ListPosition == null)
+            return Enumerable.Empty<Position>();
+
+        var query = ListPosition.AsEnumerable();
+
+        if (!string.IsNullOrWhiteSpace(searchText))
+            query = query.Where(p => p.Title.Contains(searchText, StringComparison.OrdinalIgnoreCase));
+
+        if (!string.IsNullOrWhiteSpace(selectedDepartment))
+            query = query.Where(p => p.Department == selectedDepartment);
+
+        if (!string.IsNullOrWhiteSpace(selectedLocality))
+            query = query.Where(p => p.Location == selectedLocality);
+
+        return query;
+    }
+}

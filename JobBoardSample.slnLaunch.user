@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Start Application",
+    "Name": "API + BLAZOR",
     "Projects": [
       {
         "Path": "JobBoardSample.Api\\JobBoardSample.Api.csproj",
@@ -9,6 +9,20 @@
       {
         "Path": "JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj",
         "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "API + MAUI",
+    "Projects": [
+      {
+        "Path": "JobBoardSample.Api\\JobBoardSample.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "JobBoardSample.Maui\\JobBoardSample.Maui.csproj",
+        "Action": "Start",
+        "DebugTarget": "Xiaomi 2203129G (14.0 Android - API 34)"
       }
     ]
   }

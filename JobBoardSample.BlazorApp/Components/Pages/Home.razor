@@ -1,7 +1,7 @@
 ﻿@page "/"
 @using JobBoardSample.Shared.Components
 @using JobBoardSample.Shared
-@using Microsoft.VisualBasic
+@using JobBoardSample.Shared.DTO
 @inject HttpClient Http
 
 <PageTitle>Home</PageTitle>
@@ -53,6 +53,7 @@
                 <p><strong>Dipartimento:</strong> @selectedPosition.Department</p>
                 <p><strong>Località:</strong> @selectedPosition.Location</p>
                 <button @onclick="() => selectedPosition = null">Chiudi</button>
+                <button @onclick="() => selectedPosition = null">Invia Candidatura</button>
             </div>
         </div>
     }
@@ -62,26 +63,30 @@
 
 @code {
 
+    #region Variabili
     private string? selectedDepartment = "";
     private string? selectedLocality = "";
     private string searchText = "";
-
-    private bool showOverlay = false;
     private Position? selectedPosition;
-
     private List<Position>? ListPosition;
 
+    #endregion
+
+
+    //SELEZIONE CARD
     private void HandleCardClick(Position pos)
     {
         selectedPosition = pos;
     }
 
+    //CARICAMENTO INIZIALE DATI NELLE CARDS
     protected override async Task OnInitializedAsync()
     {
         var response = await Http.GetFromJsonAsync<PositionsResponse>("https://localhost:7290/api/positions");
         ListPosition = response?.Items ?? new List<Position>();
     }
 
+    //FILTRAGGIO LATO FRONT
     private IEnumerable<Position> FilteredPositions()
     {
         if (ListPosition == null)

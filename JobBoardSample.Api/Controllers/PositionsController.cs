@@ -29,8 +29,9 @@ namespace JobBoardSample.Api.Controllers
             var items = positions.Skip((page - 1) * pageSize).Take(pageSize);
 
 
-            return Ok(new {items, total, page, pageSize});
+            //1. filtri
 
+            return Ok(new {items, total, page, pageSize}); //retrun object position response
         }
 
         //https://localhost:7290/api/positions/1

@@ -1,0 +1,53 @@
+.main-container[b-upopy77elp] {
+  width: 100%;
+  min-height: 100vh;
+  background-color: red;
+  padding: 20px;
+}
+
+.top-bar[b-upopy77elp] {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.search-box[b-upopy77elp] {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.filters-selected[b-upopy77elp] {
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.cards-container[b-upopy77elp] {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.overlay[b-upopy77elp] {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content[b-upopy77elp] {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+}

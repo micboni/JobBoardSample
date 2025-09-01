@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobBoardSample.Maui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+bd9ffd7503fce19fdc42191f85d062e0ee8b4832")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2edc7d023711568d2121f4ec958d84270ff13164")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobBoardSample.Maui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobBoardSample.Maui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
