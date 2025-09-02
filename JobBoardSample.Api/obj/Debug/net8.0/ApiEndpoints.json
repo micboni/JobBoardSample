@@ -16,6 +16,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "JobBoardSample.Api.Controllers.ApplicationsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Applications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "JobBoardSample.Api.Controllers.PositionsController",
     "Method": "GetPosition",
     "RelativePath": "api/Positions",

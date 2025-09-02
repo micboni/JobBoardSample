@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 main[b-jojgud82z3] {
@@ -19,6 +20,10 @@ main[b-jojgud82z3] {
     height: 3.5rem;
     display: flex;
     align-items: center;
+}
+
+.top-row p[b-jojgud82z3]{
+    margin: 0;
 }
 
     .top-row[b-jojgud82z3]  a, .top-row[b-jojgud82z3]  .btn-link {

@@ -16,7 +16,6 @@ C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\ob
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets\msbuild.buildMultiTargeting.JobBoardSample.Maui.props
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets\msbuild.buildTransitive.JobBoardSample.Maui.props
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.pack.json
-C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.upToDateCheck.txt
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.publish.json
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.publish.endpoints.json
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
@@ -130,10 +129,6 @@ C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bi
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.SDK.NET.dll
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\WinRT.Runtime.dll
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\JobBoardSample.Shared.dll
-C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
-C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
-C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
-C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\JobBoardSample.Shared.pdb
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\Components\Pages\Home.razor.rz.scp.css
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png
@@ -224,3 +219,8 @@ C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\ob
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.upToDateCheck.txt
+C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
+C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll

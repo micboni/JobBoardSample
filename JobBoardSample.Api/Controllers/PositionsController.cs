@@ -1,6 +1,7 @@
 ﻿using JobBoardSample.Shared;
 using Microsoft.AspNetCore.Mvc;
 using JobBoardSample.Api.Repositories;
+using JobBoardSample.Shared.DTO;
 
 namespace JobBoardSample.Api.Controllers
 {
@@ -25,13 +26,41 @@ namespace JobBoardSample.Api.Controllers
         {
             var positions = _repository.GetAllPositions();
 
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                positions = positions.Where(p =>
+                    p.Title.Contains(search, StringComparison.OrdinalIgnoreCase));
+            }
+
+            if (!string.IsNullOrEmpty(department))
+            {
+                positions = positions.Where(p =>
+                    p.Department.Equals(department, StringComparison.OrdinalIgnoreCase));
+            }
+
+            if (!string.IsNullOrEmpty(location))
+            {
+                positions = positions.Where(p =>
+                    p.Location.Equals(location, StringComparison.OrdinalIgnoreCase));
+            }
+
             var total = positions.Count();
-            var items = positions.Skip((page - 1) * pageSize).Take(pageSize);
 
+            var items = positions
+            .Skip((page - 1) * pageSize)
+            .Take(pageSize)
+            .ToList();
 
-            //1. filtri
+            var response = new PositionsResponse
+            {
+                Items = items,
+                Total = total,
+                Page = page,
+                PageSize = pageSize
+            };
 
-            return Ok(new {items, total, page, pageSize}); //retrun object position response
+            return Ok(response); //retrun object position response
         }
 
         //https://localhost:7290/api/positions/1

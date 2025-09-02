@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 main {
@@ -19,6 +20,10 @@ main {
     height: 3.5rem;
     display: flex;
     align-items: center;
+}
+
+.top-row p{
+    margin: 0;
 }
 
     .top-row ::deep a, .top-row ::deep .btn-link {

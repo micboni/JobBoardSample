@@ -1,8 +1,12 @@
+using JobBoardSample.Api.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddSingleton<ApplicationsProvider>();
+builder.Services.AddSingleton<PositionsProvider>();
 
 builder.Services.AddCors(options =>
 {

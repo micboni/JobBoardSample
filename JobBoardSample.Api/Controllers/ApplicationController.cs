@@ -13,7 +13,6 @@ namespace JobBoardSample.Api.Controllers
         private readonly ApplicationsProvider _applicationsProvider;
         private readonly PositionsProvider _positionsProvider;
 
-
         public ApplicationsController(ApplicationsProvider applicationsProvider, PositionsProvider positionsProvider)
         {
             _applicationsProvider = applicationsProvider;
@@ -23,15 +22,35 @@ namespace JobBoardSample.Api.Controllers
         [HttpPost]
         public IActionResult PostApplication([FromBody] Applications request)
         {
-            if (string.IsNullOrWhiteSpace(request.candidateName))
+            //controllo campi obbligatori
+            if (request == null || request.PositionId <= 0 ||
+                string.IsNullOrWhiteSpace(request.CandidateName) ||
+                string.IsNullOrWhiteSpace(request.Email))
             {
-                return BadRequest(new { message = "Nome, email e positionid sono obbligatori" });
+                return BadRequest(new { message = "PositionId, CandidateName ed Email sono obbligatori" });
             }
 
             //controllo se la posizione esiste
+            var position = _positionsProvider.GetPositionById(request.PositionId);
 
-            //aggiungo nuova candidatura
-            return Ok(request);
+            if (position == null) 
+            {
+                return NotFound(new {message = $"La posizione con id {request.PositionId} non esiste" });
+            }
+
+            //aggiungo la candidatura al provider 
+            _applicationsProvider.Add(request);
+
+
+            //restitituisco 201 Created
+            return CreatedAtAction(nameof(PostApplication), new { id = request.PositionId }, request);
+        }
+
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var allApplications = _applicationsProvider.GetAll();
+            return Ok(allApplications);
         }
     }
 }

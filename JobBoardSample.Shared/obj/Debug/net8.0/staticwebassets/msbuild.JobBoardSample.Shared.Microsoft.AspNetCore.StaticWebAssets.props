@@ -57,7 +57,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <FileLength>457</FileLength>
-      <LastWriteTime>Mon, 01 Sep 2025 10:50:46 GMT</LastWriteTime>
+      <LastWriteTime>Tue, 02 Sep 2025 12:12:07 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JobBoardSample.Shared.rj2vdegm0v.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>

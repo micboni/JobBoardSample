@@ -536,7 +536,7 @@
       <PackagePath>wwwroot\JobBoardSample.Maui.styles.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\JobBoardSample.Maui.bundle.scp.css">
-      <PackagePath>wwwroot\JobBoardSample.Maui.efe53uuovc.bundle.scp.css</PackagePath>
+      <PackagePath>wwwroot\JobBoardSample.Maui.e7gjgmqz6l.bundle.scp.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Shared\obj\Debug\net8.0\scopedcss\projectbundle\JobBoardSample.Shared.bundle.scp.css">
       <PackagePath>wwwroot\_content\JobBoardSample.Shared\JobBoardSample.Shared.rj2vdegm0v.bundle.scp.css</PackagePath>

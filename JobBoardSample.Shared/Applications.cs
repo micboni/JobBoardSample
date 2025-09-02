@@ -11,8 +11,8 @@ namespace JobBoardSample.Shared
     {
         public int Id { get; set; }
         public int PositionId { get; set; }
-        public string candidateName { get; set; } = "";
-        public string email { get; set; } = "";
+        public string CandidateName { get; set; } = "";
+        public string Email { get; set; } = "";
         public string? CvUrl { get; set; }
         public string? Notes {  get; set; }
         public string Status { get; set; } = "pending"; //pending, rejected o highlighted

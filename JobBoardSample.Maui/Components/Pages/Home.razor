@@ -2,6 +2,7 @@
 @using JobBoardSample.Shared.Components
 @using JobBoardSample.Shared
 @using JobBoardSample.Shared.DTO
+@using JobBoardSample.Shared.Components
 @inject HttpClient Http
 
 <PageTitle>Home</PageTitle>
@@ -28,8 +29,7 @@
         </select>
     </div>
     
-    
-    @*<div class="cards-container">
+    <div class="cards-container">
 
         @if (ListPosition == null)
         {
@@ -48,6 +48,7 @@
         }
     </div>
 
+
     @if (selectedPosition is not null)
     {
         <div class="overlay">
@@ -60,7 +61,7 @@
             </div>
         </div>
     }
-    *@
+    
 </div>
 
 
@@ -81,8 +82,16 @@
         selectedPosition = pos;
     }
 
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await Http.GetFromJsonAsync<PositionsResponse>("http://10.0.2.2:5017/api/positions");
+        ListPosition = response?.Items ?? new List<Position>();
+    }
+
+
     //CARICAMENTO INIZIALE DATI NELLE CARDS
-    protected override void OnInitialized()
+    /*protected override void OnInitialized()
     {
         // Lista statica per test
         ListPosition = new List<Position>
@@ -118,7 +127,8 @@
                 PublishedAtUtc = DateTime.UtcNow.AddDays(-1)
             }
         };
-    }
+    }*/
+
 
     //FILTRAGGIO LATO FRONT
     private IEnumerable<Position> FilteredPositions()
