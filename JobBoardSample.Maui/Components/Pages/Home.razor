@@ -1,17 +1,16 @@
-﻿@page "/"
+﻿@*MAUI*@
+@page "/"
 @using JobBoardSample.Shared.Components
 @using JobBoardSample.Shared
 @using JobBoardSample.Shared.DTO
-@using JobBoardSample.Shared.Components
 @inject HttpClient Http
 
 <PageTitle>Home</PageTitle>
 
 <div class="main-container">
     <div class="top-bar">
-        <input type="text" placeholder="Cerca annuncio..." class="search-box" @bind="searchText">
-    </div>
-    <div class="filters-container">
+        <input type="text" placeholder="Cerca annuncio..." class="search-box" @bind="searchText" @oninput="FilterChanged">
+
         <select class="filters-selected" @bind="selectedLocality">
             <option value="">Località</option>
             @foreach (var loc in Localities.All)
@@ -27,27 +26,33 @@
                 <option value="@dep">@dep</option>
             }
         </select>
+        <button @onclick="SearchPositions">Cerca</button>
+
     </div>
-    
     <div class="cards-container">
 
         @if (ListPosition == null)
         {
             <p>Caricamento posizioni...</p>
         }
-        else if (!FilteredPositions().Any())
+        else if (!ListPosition.Any())
         {
             <p>Nessuna poszione lavorativa trovata.</p>
         }
         else
         {
-            @foreach (var pos in FilteredPositions())
+            @foreach (var pos in ListPosition)
             {
                 <PositionCard position="pos" OnClick="HandleCardClick" />
             }
         }
     </div>
 
+    <div class="pagination">
+        <button @onclick="PreviousPage" disabled="@(currentPage == 1)">« Precedente</button>
+        <span>Pagina @currentPage di @totalPages</span>
+        <button @onclick="NextPage" disabled="@(currentPage >= totalPages)">Successiva »</button>
+    </div>
 
     @if (selectedPosition is not null)
     {
@@ -56,15 +61,35 @@
                 <h3>@selectedPosition.Title</h3>
                 <p><strong>Dipartimento:</strong> @selectedPosition.Department</p>
                 <p><strong>Località:</strong> @selectedPosition.Location</p>
-                <button @onclick="() => selectedPosition = null">Chiudi</button>
-                <button @onclick="() => selectedPosition = null">Invia Candidatura</button>
+                <p><strong>Stipendio:</strong> @selectedPosition.SalaryRangeMin € - @selectedPosition.SalaryRangeMax €</p>
+                
+                <EditForm Model="applicationRequest" OnValidSubmit="SubmitApplication">
+                <DataAnnotationsValidator />
+                
+                <div>
+                    <label>Nome:</label>
+                    <InputText @bind-Value="applicationRequest.CandidateName" />
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <InputText @bind-Value="applicationRequest.Email" />
+                </div>
+                <div>
+                    <label>CV URL:</label>
+                    <InputText @bind-Value="applicationRequest.CvUrl" />
+                </div>
+                <div>
+                    <label>Note:</label>
+                    <InputTextArea @bind-Value="applicationRequest.Notes" />
+                </div>
+
+                <button type="submit">Invia Candidatura</button>
+                <button type="button" @onclick="() => selectedPosition = null">Chiudi</button>
+            </EditForm>
             </div>
         </div>
     }
-    
 </div>
-
-
 
 @code {
 
@@ -74,7 +99,32 @@
     private string searchText = "";
     private Position? selectedPosition;
     private List<Position>? ListPosition;
+
     #endregion
+
+    private async Task SearchPositions()
+{
+    await LoadPosition(); // LoadPosition invia la richiesta al backend con searchText, selectedDepartment, selectedLocality
+}
+
+    private Applications applicationRequest = new();
+
+    private async Task SubmitApplication()
+    {
+        applicationRequest.PositionId = selectedPosition.Id;
+
+        var response = await Http.PostAsJsonAsync("api/applications", applicationRequest);
+
+        if (response.IsSuccessStatusCode)
+        {
+            selectedPosition = null;
+            applicationRequest = new Applications();
+        }
+        else
+        {
+            var error = await response.Content.ReadAsStringAsync();
+        }
+    } 
 
     //SELEZIONE CARD
     private void HandleCardClick(Position pos)
@@ -82,56 +132,58 @@
         selectedPosition = pos;
     }
 
-
+    //CARICAMENTO INIZIALE DATI NELLE CARDS
     protected override async Task OnInitializedAsync()
     {
-        var response = await Http.GetFromJsonAsync<PositionsResponse>("http://10.0.2.2:5017/api/positions");
+        await LoadPosition();
+    }
+
+    private int currentPage = 1;
+    private int pageSize = 12;
+    private int totalPositions = 0;
+
+
+    private readonly string ApiBaseUrl = "https://83c9b6813f53.ngrok-free.app";
+
+    private async Task LoadPosition()
+    {
+        var response = await Http.GetFromJsonAsync<PositionsResponse>(
+            $"{ApiBaseUrl}/api/positions?page={currentPage}&pageSize={pageSize}&search={searchText}&department={selectedDepartment}&location={selectedLocality}");
+
         ListPosition = response?.Items ?? new List<Position>();
+        totalPositions = response?.Total ?? 0;
     }
 
 
-    //CARICAMENTO INIZIALE DATI NELLE CARDS
-    /*protected override void OnInitialized()
+    private int totalPages => (int)Math.Ceiling((double)totalPositions / pageSize);
+
+    private async Task PreviousPage()
     {
-        // Lista statica per test
-        ListPosition = new List<Position>
+        if (currentPage > 1)
         {
-            new Position
-            {
-                Id = 1,
-                Title = "Sviluppatore C#",
-                Department = "IT",
-                Location = "Milano",
-                SalaryRangeMin = 2000,
-                SalaryRangeMax = 3000,
-                PublishedAtUtc = DateTime.UtcNow.AddDays(-3)
-            },
-            new Position
-            {
-                Id = 2,
-                Title = "Graphic Designer",
-                Department = "Design",
-                Location = "Roma",
-                SalaryRangeMin = 1800,
-                SalaryRangeMax = 2500,
-                PublishedAtUtc = DateTime.UtcNow.AddDays(-5)
-            },
-            new Position
-            {
-                Id = 3,
-                Title = "Project Manager",
-                Department = "Management",
-                Location = "Torino",
-                SalaryRangeMin = 2500,
-                SalaryRangeMax = 4000,
-                PublishedAtUtc = DateTime.UtcNow.AddDays(-1)
-            }
-        };
-    }*/
+            currentPage--;
+            await LoadPosition();
+        }
+    }
+
+    private async Task NextPage()
+    {
+        if (currentPage < totalPages)
+        {
+            currentPage++;
+            await LoadPosition();
+        }
+    }
+
+    private async Task FilterChanged(ChangeEventArgs e = null)
+    {
+        currentPage = 1;
+        await LoadPosition();
+    }
 
 
     //FILTRAGGIO LATO FRONT
-    private IEnumerable<Position> FilteredPositions()
+   /* private IEnumerable<Position> FilteredPositions()
     {
         if (ListPosition == null)
             return Enumerable.Empty<Position>();
@@ -148,5 +200,6 @@
             query = query.Where(p => p.Location == selectedLocality);
 
         return query;
-    }
+    }*/
+
 }

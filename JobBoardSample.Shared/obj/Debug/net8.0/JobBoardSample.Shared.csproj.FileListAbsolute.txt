@@ -30,4 +30,3 @@ C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Shared\
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Shared\obj\Debug\net8.0\ref\JobBoardSample.Shared.dll
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Shared\obj\Debug\net8.0\scopedcss\Components\PositionCard.razor.rz.scp.css
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Shared\obj\Debug\net8.0\scopedcss\projectbundle\JobBoardSample.Shared.bundle.scp.css
-C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Shared\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

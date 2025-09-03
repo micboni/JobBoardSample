@@ -39,7 +39,6 @@ C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Api\obj
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Api\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Api\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Api\obj\Debug\net8.0\JobBoard.345D9155.Up2Date
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Api\obj\Debug\net8.0\JobBoardSample.Api.dll
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Api\obj\Debug\net8.0\refint\JobBoardSample.Api.dll

@@ -18,7 +18,7 @@
       {
         "Path": "JobBoardSample.Api\\JobBoardSample.Api.csproj",
         "Action": "Start",
-        "DebugTarget": "http"
+        "DebugTarget": "https"
       },
       {
         "Path": "JobBoardSample.Maui\\JobBoardSample.Maui.csproj",
