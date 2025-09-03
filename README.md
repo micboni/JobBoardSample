@@ -19,8 +19,13 @@ questo file descrive la pagina principale dell'applicazione, con una searchbox, 
 
 
 3.JobBoardSample.Maui
-
-
+- Progetto uguale a quello Blazor, con la sola differenza della URL api
+- Come connettersi al back:
+  1. Avviare JobBoardSample.Api
+  2. Avviare Ngrok -> ngrok http 5017
+  3. Prendere la url simile a -> https://83c9b6813f53.ngrok-free.app ed inserirla in Home.razor @code{... private readonly string ApiBaseUrl = "https://83c9b6813f53.ngrok-free.app"; ...}
+  5. Avviare JobBoardSample.Maui
+     
 4.JobBoardSample.Shared
 La tipologia di questo progetto è un razor class library, necessario per condividere codice tra BlazorApp e MAUI.
 
