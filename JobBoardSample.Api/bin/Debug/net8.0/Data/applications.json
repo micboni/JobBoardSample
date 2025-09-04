@@ -28,65 +28,425 @@
   },
   {
     "Id": 4,
-    "PositionId": 5,
+    "PositionId": 4,
     "CandidateName": "Sara Conti",
     "Email": "sara.conti@example.com",
     "CvUrl": "https://cv.example.com/sara_conti.pdf",
-    "Notes": "Big Data e Spark",
+    "Notes": "Sviluppo app mobile iOS/Android",
     "Status": "rejected"
   },
   {
     "Id": 5,
-    "PositionId": 7,
+    "PositionId": 5,
     "CandidateName": "Alessandro Galli",
     "Email": "alessandro.galli@example.com",
     "CvUrl": "https://cv.example.com/alessandro_galli.pdf",
-    "Notes": "Esperienza in DevOps pipeline CI/CD",
+    "Notes": "Big Data e Spark",
     "Status": "highlighted"
   },
   {
     "Id": 6,
-    "PositionId": 11,
+    "PositionId": 6,
     "CandidateName": "Francesca Moretti",
     "Email": "francesca.moretti@example.com",
     "CvUrl": "https://cv.example.com/francesca_moretti.pdf",
-    "Notes": "Specialista sicurezza reti e cloud",
+    "Notes": "QA automation con Selenium",
     "Status": "pending"
   },
   {
     "Id": 7,
-    "PositionId": 12,
+    "PositionId": 7,
     "CandidateName": "Davide Romano",
     "Email": "davide.romano@example.com",
     "CvUrl": "https://cv.example.com/davide_romano.pdf",
-    "Notes": "Esperienza in modelli AI e ML",
+    "Notes": "Esperienza in DevOps pipeline CI/CD",
     "Status": "pending"
   },
   {
     "Id": 8,
-    "PositionId": 15,
+    "PositionId": 8,
     "CandidateName": "Chiara De Angelis",
     "Email": "chiara.deangelis@example.com",
     "CvUrl": "https://cv.example.com/chiara_deangelis.pdf",
-    "Notes": "Architetture cloud AWS e Azure",
+    "Notes": "UX/UI designer senior",
     "Status": "highlighted"
   },
   {
     "Id": 9,
-    "PositionId": 18,
+    "PositionId": 9,
     "CandidateName": "Stefano Marchetti",
     "Email": "stefano.marchetti@example.com",
     "CvUrl": "https://cv.example.com/stefano_marchetti.pdf",
-    "Notes": "Esperienza vendite B2B nel settore IT",
+    "Notes": "Analisi business e processi",
     "Status": "pending"
   },
   {
     "Id": 10,
-    "PositionId": 20,
+    "PositionId": 10,
     "CandidateName": "Elena Fabbri",
     "Email": "elena.fabbri@example.com",
     "CvUrl": "https://cv.example.com/elena_fabbri.pdf",
-    "Notes": "Junior developer motivata",
+    "Notes": "Technical writing e documentazione",
     "Status": "pending"
+  },
+  {
+    "Id": 11,
+    "PositionId": 11,
+    "CandidateName": "Matteo Ricci",
+    "Email": "matteo.ricci@example.com",
+    "CvUrl": "https://cv.example.com/matteo_ricci.pdf",
+    "Notes": "Security specialist reti e cloud",
+    "Status": "highlighted"
+  },
+  {
+    "Id": 12,
+    "PositionId": 12,
+    "CandidateName": "Laura Fontana",
+    "Email": "laura.fontana@example.com",
+    "CvUrl": "https://cv.example.com/laura_fontana.pdf",
+    "Notes": "AI engineer con ML/Deep Learning",
+    "Status": "pending"
+  },
+  {
+    "Id": 13,
+    "PositionId": 13,
+    "CandidateName": "Giorgio Lombardi",
+    "Email": "giorgio.lombardi@example.com",
+    "CvUrl": "https://cv.example.com/giorgio_lombardi.pdf",
+    "Notes": "Scrum Master certificato",
+    "Status": "pending"
+  },
+  {
+    "Id": 14,
+    "PositionId": 14,
+    "CandidateName": "Valentina Esposito",
+    "Email": "valentina.esposito@example.com",
+    "CvUrl": "https://cv.example.com/valentina_esposito.pdf",
+    "Notes": "HR generalist",
+    "Status": "rejected"
+  },
+  {
+    "Id": 15,
+    "PositionId": 15,
+    "CandidateName": "Federico Santoro",
+    "Email": "federico.santoro@example.com",
+    "CvUrl": "https://cv.example.com/federico_santoro.pdf",
+    "Notes": "Cloud architect AWS/Azure",
+    "Status": "highlighted"
+  },
+  {
+    "Id": 16,
+    "PositionId": 16,
+    "CandidateName": "Martina Rinaldi",
+    "Email": "martina.rinaldi@example.com",
+    "CvUrl": "https://cv.example.com/martina_rinaldi.pdf",
+    "Notes": "Customer support specialist",
+    "Status": "pending"
+  },
+  {
+    "Id": 17,
+    "PositionId": 17,
+    "CandidateName": "Nicola Greco",
+    "Email": "nicola.greco@example.com",
+    "CvUrl": "https://cv.example.com/nicola_greco.pdf",
+    "Notes": "Marketing digital",
+    "Status": "pending"
+  },
+  {
+    "Id": 18,
+    "PositionId": 18,
+    "CandidateName": "Claudia Ferri",
+    "Email": "claudia.ferri@example.com",
+    "CvUrl": "https://cv.example.com/claudia_ferri.pdf",
+    "Notes": "Sales manager B2B",
+    "Status": "highlighted"
+  },
+  {
+    "Id": 19,
+    "PositionId": 19,
+    "CandidateName": "Alberto Neri",
+    "Email": "alberto.neri@example.com",
+    "CvUrl": "https://cv.example.com/alberto_neri.pdf",
+    "Notes": "Product Owner Agile",
+    "Status": "pending"
+  },
+  {
+    "Id": 20,
+    "PositionId": 20,
+    "CandidateName": "Giovanna Russo",
+    "Email": "giovanna.russo@example.com",
+    "CvUrl": "https://cv.example.com/giovanna_russo.pdf",
+    "Notes": "Junior Developer",
+    "Status": "pending"
+  },
+  {
+    "Id": 21,
+    "PositionId": 1,
+    "CandidateName": "Andrea Colombo",
+    "Email": "andrea.colombo@example.com",
+    "CvUrl": "https://cv.example.com/andrea_colombo.pdf",
+    "Notes": "Backend con Node.js e .NET",
+    "Status": "pending"
+  },
+  {
+    "Id": 22,
+    "PositionId": 2,
+    "CandidateName": "Martina Barbieri",
+    "Email": "martina.barbieri@example.com",
+    "CvUrl": "https://cv.example.com/martina_barbieri.pdf",
+    "Notes": "Frontend Angular",
+    "Status": "rejected"
+  },
+  {
+    "Id": 23,
+    "PositionId": 3,
+    "CandidateName": "Davide Mancini",
+    "Email": "davide.mancini@example.com",
+    "CvUrl": "https://cv.example.com/davide_mancini.pdf",
+    "Notes": "Amministratore sistemi Linux",
+    "Status": "pending"
+  },
+  {
+    "Id": 24,
+    "PositionId": 4,
+    "CandidateName": "Elisa Conti",
+    "Email": "elisa.conti@example.com",
+    "CvUrl": "https://cv.example.com/elisa_conti.pdf",
+    "Notes": "Sviluppo app React Native",
+    "Status": "highlighted"
+  },
+  {
+    "Id": 25,
+    "PositionId": 5,
+    "CandidateName": "Simone Vitali",
+    "Email": "simone.vitali@example.com",
+    "CvUrl": "https://cv.example.com/simone_vitali.pdf",
+    "Notes": "Data engineer esperto in ETL",
+    "Status": "pending"
+  },
+  {
+    "Id": 26,
+    "PositionId": 6,
+    "CandidateName": "Francesco Sala",
+    "Email": "francesco.sala@example.com",
+    "CvUrl": "https://cv.example.com/francesco_sala.pdf",
+    "Notes": "QA manual testing",
+    "Status": "rejected"
+  },
+  {
+    "Id": 27,
+    "PositionId": 7,
+    "CandidateName": "Laura Martini",
+    "Email": "laura.martini@example.com",
+    "CvUrl": "https://cv.example.com/laura_martini.pdf",
+    "Notes": "DevOps con Docker e Kubernetes",
+    "Status": "pending"
+  },
+  {
+    "Id": 28,
+    "PositionId": 8,
+    "CandidateName": "Giorgia Piras",
+    "Email": "giorgia.piras@example.com",
+    "CvUrl": "https://cv.example.com/giorgia_piras.pdf",
+    "Notes": "Designer UI/UX",
+    "Status": "pending"
+  },
+  {
+    "Id": 29,
+    "PositionId": 9,
+    "CandidateName": "Matteo Giordano",
+    "Email": "matteo.giordano@example.com",
+    "CvUrl": "https://cv.example.com/matteo_giordano.pdf",
+    "Notes": "Business analyst processi aziendali",
+    "Status": "highlighted"
+  },
+  {
+    "Id": 30,
+    "PositionId": 10,
+    "CandidateName": "Roberta De Luca",
+    "Email": "roberta.deluca@example.com",
+    "CvUrl": "https://cv.example.com/roberta_deluca.pdf",
+    "Notes": "Technical writer documentazione software",
+    "Status": "pending"
+  },
+  {
+    "Id": 31,
+    "PositionId": 11,
+    "CandidateName": "Michele Leone",
+    "Email": "michele.leone@example.com",
+    "CvUrl": "https://cv.example.com/michele_leone.pdf",
+    "Notes": "Specialista sicurezza informatica",
+    "Status": "pending"
+  },
+  {
+    "Id": 32,
+    "PositionId": 12,
+    "CandidateName": "Sofia Martini",
+    "Email": "sofia.martini@example.com",
+    "CvUrl": "https://cv.example.com/sofia_martini.pdf",
+    "Notes": "AI & ML engineer",
+    "Status": "highlighted"
+  },
+  {
+    "Id": 33,
+    "PositionId": 13,
+    "CandidateName": "Giacomo Santini",
+    "Email": "giacomo.santini@example.com",
+    "CvUrl": "https://cv.example.com/giacomo_santini.pdf",
+    "Notes": "Scrum master certificato",
+    "Status": "pending"
+  },
+  {
+    "Id": 34,
+    "PositionId": 14,
+    "CandidateName": "Federica Rizzo",
+    "Email": "federica.rizzo@example.com",
+    "CvUrl": "https://cv.example.com/federica_rizzo.pdf",
+    "Notes": "Recruiting HR specialist",
+    "Status": "pending"
+  },
+  {
+    "Id": 35,
+    "PositionId": 15,
+    "CandidateName": "Carlo Berti",
+    "Email": "carlo.berti@example.com",
+    "CvUrl": "https://cv.example.com/carlo_berti.pdf",
+    "Notes": "Cloud Architect esperto AWS",
+    "Status": "highlighted"
+  },
+  {
+    "Id": 36,
+    "PositionId": 16,
+    "CandidateName": "Chiara Marchetti",
+    "Email": "chiara.marchetti@example.com",
+    "CvUrl": "https://cv.example.com/chiara_marchetti.pdf",
+    "Notes": "Customer support",
+    "Status": "pending"
+  },
+  {
+    "Id": 37,
+    "PositionId": 17,
+    "CandidateName": "Lorenzo De Santis",
+    "Email": "lorenzo.desantis@example.com",
+    "CvUrl": "https://cv.example.com/lorenzo_desantis.pdf",
+    "Notes": "Marketing online e social",
+    "Status": "pending"
+  },
+  {
+    "Id": 38,
+    "PositionId": 18,
+    "CandidateName": "Alessia Fontana",
+    "Email": "alessia.fontana@example.com",
+    "CvUrl": "https://cv.example.com/alessia_fontana.pdf",
+    "Notes": "Sales B2B IT",
+    "Status": "highlighted"
+  },
+  {
+    "Id": 39,
+    "PositionId": 19,
+    "CandidateName": "Francesco Puglisi",
+    "Email": "francesco.puglisi@example.com",
+    "CvUrl": "https://cv.example.com/francesco_puglisi.pdf",
+    "Notes": "Product Owner Scrum",
+    "Status": "pending"
+  },
+  {
+    "Id": 40,
+    "PositionId": 20,
+    "CandidateName": "Martina Rota",
+    "Email": "martina.rota@example.com",
+    "CvUrl": "https://cv.example.com/martina_rota.pdf",
+    "Notes": "Junior developer C#",
+    "Status": "pending"
+  },
+  {
+    "Id": 41,
+    "PositionId": 1,
+    "CandidateName": "Giovanni D'Amico",
+    "Email": "giovanni.damico@example.com",
+    "CvUrl": "https://cv.example.com/giovanni_damico.pdf",
+    "Notes": "Backend .NET Core",
+    "Status": "highlighted"
+  },
+  {
+    "Id": 42,
+    "PositionId": 2,
+    "CandidateName": "Elena Bianchi",
+    "Email": "elena.bianchi@example.com",
+    "CvUrl": "https://cv.example.com/elena_bianchi.pdf",
+    "Notes": "Frontend Vue.js",
+    "Status": "pending"
+  },
+  {
+    "Id": 43,
+    "PositionId": 3,
+    "CandidateName": "Antonio Russo",
+    "Email": "antonio.russo@example.com",
+    "CvUrl": "https://cv.example.com/antonio_russo.pdf",
+    "Notes": "SysAdmin Windows/Linux",
+    "Status": "rejected"
+  },
+  {
+    "Id": 44,
+    "PositionId": 4,
+    "CandidateName": "Silvia Gallo",
+    "Email": "silvia.gallo@example.com",
+    "CvUrl": "https://cv.example.com/silvia_gallo.pdf",
+    "Notes": "Mobile developer Flutter",
+    "Status": "pending"
+  },
+  {
+    "Id": 45,
+    "PositionId": 5,
+    "CandidateName": "Marco Bellini",
+    "Email": "marco.bellini@example.com",
+    "CvUrl": "https://cv.example.com/marco_bellini.pdf",
+    "Notes": "ETL & Data pipelines",
+    "Status": "pending"
+  },
+  {
+    "Id": 46,
+    "PositionId": 6,
+    "CandidateName": "Claudia Morelli",
+    "Email": "claudia.morelli@example.com",
+    "CvUrl": "https://cv.example.com/claudia_morelli.pdf",
+    "Notes": "QA automation",
+    "Status": "highlighted"
+  },
+  {
+    "Id": 47,
+    "PositionId": 7,
+    "CandidateName": "Riccardo Longo",
+    "Email": "riccardo.longo@example.com",
+    "CvUrl": "https://cv.example.com/riccardo_longo.pdf",
+    "Notes": "DevOps CI/CD",
+    "Status": "pending"
+  },
+  {
+    "Id": 48,
+    "PositionId": 8,
+    "CandidateName": "Giulia Serra",
+    "Email": "giulia.serra@example.com",
+    "CvUrl": "https://cv.example.com/giulia_serra.pdf",
+    "Notes": "UI/UX designer",
+    "Status": "pending"
+  },
+  {
+    "Id": 49,
+    "PositionId": 9,
+    "CandidateName": "Davide Fabbri",
+    "Email": "davide.fabbri@example.com",
+    "CvUrl": "https://cv.example.com/davide_fabbri.pdf",
+    "Notes": "Business analyst",
+    "Status": "pending"
+  },
+  {
+    "Id": 50,
+    "PositionId": 10,
+    "CandidateName": "Elisa Vitali",
+    "Email": "elisa.vitali@example.com",
+    "CvUrl": "https://cv.example.com/elisa_vitali.pdf",
+    "Notes": "Technical writer",
+    "Status": "highlighted"
   }
 ]

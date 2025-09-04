@@ -80,6 +80,7 @@
         await LoadPositions();
     }
 
+    //CARICA POSITIONS
     private async Task LoadPositions()
     {
         var response = await Http.GetFromJsonAsync<PositionsResponse>("https://localhost:7290/api/positions");
@@ -98,6 +99,7 @@
         await LoadApplications(pos.Id);
     }
 
+    //CARICA APPLICATIONS
     private async Task LoadApplications(int positionId)
     {
         var request = new HttpRequestMessage(

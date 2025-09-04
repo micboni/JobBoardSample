@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.blazorapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|solutionrelative:jobboardsample.blazorapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.blazorapp\\components\\pages\\home.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|solutionrelative:jobboardsample.blazorapp\\components\\pages\\home.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.blazorapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|solutionrelative:jobboardsample.blazorapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.blazorapp\\components\\pages\\admin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|solutionrelative:jobboardsample.blazorapp\\components\\pages\\admin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.blazorapp\\components\\pages\\admin.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|solutionrelative:jobboardsample.blazorapp\\components\\pages\\admin.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.blazorapp\\components\\pages\\admin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|solutionrelative:jobboardsample.blazorapp\\components\\pages\\admin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|c:\\users\\mboni\\desktop\\3sd\\jobboardproject\\jobboardsample\\jobboardsample.blazorapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D32C654B-C032-4359-974C-5C5B35A4B361}|JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj|solutionrelative:jobboardsample.blazorapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,37 +22,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 282,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Home.razor.css",
-              "DocumentMoniker": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.BlazorApp\\Components\\Pages\\Home.razor.css",
-              "RelativeDocumentMoniker": "JobBoardSample.BlazorApp\\Components\\Pages\\Home.razor.css",
-              "ToolTip": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.BlazorApp\\Components\\Pages\\Home.razor.css",
-              "RelativeToolTip": "JobBoardSample.BlazorApp\\Components\\Pages\\Home.razor.css",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-04T14:11:46.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.BlazorApp\\Components\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "JobBoardSample.BlazorApp\\Components\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.BlazorApp\\Components\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "JobBoardSample.BlazorApp\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAMAAAAAAAAAAAApwBAAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-04T14:06:15.082Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -70,33 +36,33 @@
               "RelativeDocumentMoniker": "JobBoardSample.BlazorApp\\Components\\Pages\\Home.razor",
               "ToolTip": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.BlazorApp\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "JobBoardSample.BlazorApp\\Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAGAAAAAAAAAAAADgv2cAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAADgv2oAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-04T13:34:52.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Admin.razor.css",
               "DocumentMoniker": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.BlazorApp\\Components\\Pages\\Admin.razor.css",
               "RelativeDocumentMoniker": "JobBoardSample.BlazorApp\\Components\\Pages\\Admin.razor.css",
               "ToolTip": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.BlazorApp\\Components\\Pages\\Admin.razor.css",
               "RelativeToolTip": "JobBoardSample.BlazorApp\\Components\\Pages\\Admin.razor.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-09-04T13:04:32.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Admin.razor",
               "DocumentMoniker": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.BlazorApp\\Components\\Pages\\Admin.razor",
               "RelativeDocumentMoniker": "JobBoardSample.BlazorApp\\Components\\Pages\\Admin.razor",
               "ToolTip": "C:\\Users\\mboni\\Desktop\\3SD\\JobBoardProject\\JobBoardSample\\JobBoardSample.BlazorApp\\Components\\Pages\\Admin.razor",
               "RelativeToolTip": "JobBoardSample.BlazorApp\\Components\\Pages\\Admin.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-04T12:24:09.64Z",
               "EditorCaption": ""
