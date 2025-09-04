@@ -16,7 +16,7 @@ il progetto è suddiviso in:
 Progetto creato per poter programmare un interfaccia web in blazor.
 il file principale che descrive il front è Home.razor,
 questo file descrive la pagina principale dell'applicazione, con una searchbox, filters e delle cards che rappresentano le posizioni lavorative aperte.
-Il secondo file è Admin ->
+Il secondo file è Admin che visualizza la pagina dedicata all'admin-> la apikey si trova all'interno del file appsettings.json del progetto 1.JobBoardSample.Api
 
 
 3.JobBoardSample.Maui
