@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "Id": 1,
+    "PositionId": 1,
+    "CandidateName": "Luca Rossi",
+    "Email": "luca.rossi@example.com",
+    "CvUrl": "https://cv.example.com/luca_rossi.pdf",
+    "Notes": "Esperienza in .NET e SQL Server",
+    "Status": "pending"
+  },
+  {
+    "Id": 2,
+    "PositionId": 2,
+    "CandidateName": "Giulia Bianchi",
+    "Email": "giulia.bianchi@example.com",
+    "CvUrl": "https://cv.example.com/giulia_bianchi.pdf",
+    "Notes": "Frontend con React e Angular",
+    "Status": "highlighted"
+  },
+  {
+    "Id": 3,
+    "PositionId": 3,
+    "CandidateName": "Marco Verdi",
+    "Email": "marco.verdi@example.com",
+    "CvUrl": "https://cv.example.com/marco_verdi.pdf",
+    "Notes": "Gestione server Linux e Windows",
+    "Status": "pending"
+  },
+  {
+    "Id": 4,
+    "PositionId": 5,
+    "CandidateName": "Sara Conti",
+    "Email": "sara.conti@example.com",
+    "CvUrl": "https://cv.example.com/sara_conti.pdf",
+    "Notes": "Big Data e Spark",
+    "Status": "rejected"
+  },
+  {
+    "Id": 5,
+    "PositionId": 7,
+    "CandidateName": "Alessandro Galli",
+    "Email": "alessandro.galli@example.com",
+    "CvUrl": "https://cv.example.com/alessandro_galli.pdf",
+    "Notes": "Esperienza in DevOps pipeline CI/CD",
+    "Status": "highlighted"
+  },
+  {
+    "Id": 6,
+    "PositionId": 11,
+    "CandidateName": "Francesca Moretti",
+    "Email": "francesca.moretti@example.com",
+    "CvUrl": "https://cv.example.com/francesca_moretti.pdf",
+    "Notes": "Specialista sicurezza reti e cloud",
+    "Status": "pending"
+  },
+  {
+    "Id": 7,
+    "PositionId": 12,
+    "CandidateName": "Davide Romano",
+    "Email": "davide.romano@example.com",
+    "CvUrl": "https://cv.example.com/davide_romano.pdf",
+    "Notes": "Esperienza in modelli AI e ML",
+    "Status": "pending"
+  },
+  {
+    "Id": 8,
+    "PositionId": 15,
+    "CandidateName": "Chiara De Angelis",
+    "Email": "chiara.deangelis@example.com",
+    "CvUrl": "https://cv.example.com/chiara_deangelis.pdf",
+    "Notes": "Architetture cloud AWS e Azure",
+    "Status": "highlighted"
+  },
+  {
+    "Id": 9,
+    "PositionId": 18,
+    "CandidateName": "Stefano Marchetti",
+    "Email": "stefano.marchetti@example.com",
+    "CvUrl": "https://cv.example.com/stefano_marchetti.pdf",
+    "Notes": "Esperienza vendite B2B nel settore IT",
+    "Status": "pending"
+  },
+  {
+    "Id": 10,
+    "PositionId": 20,
+    "CandidateName": "Elena Fabbri",
+    "Email": "elena.fabbri@example.com",
+    "CvUrl": "https://cv.example.com/elena_fabbri.pdf",
+    "Notes": "Junior developer motivata",
+    "Status": "pending"
+  }
+]

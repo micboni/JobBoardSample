@@ -64,13 +64,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JobBoardSample.Maui.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pq5m9fmwpd"},{"Name":"integrity","Value":"sha256-b5RpeRq7W9DIThL\u002BkvZtpH0aaz6NjWQ3qhZNyDZADfg="},{"Name":"label","Value":"JobBoardSample.Maui.styles.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6360"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022b5RpeRq7W9DIThL\u002BkvZtpH0aaz6NjWQ3qhZNyDZADfg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 03 Sep 2025 12:43:56 GMT"},{"Name":"Link","Value":"\u003C_content/JobBoardSample.Shared/JobBoardSample.Shared.rj2vdegm0v.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6360"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022b5RpeRq7W9DIThL\u002BkvZtpH0aaz6NjWQ3qhZNyDZADfg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 04 Sep 2025 14:01:10 GMT"},{"Name":"Link","Value":"\u003C_content/JobBoardSample.Shared/JobBoardSample.Shared.rj2vdegm0v.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="JobBoardSample.Maui.styles.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JobBoardSample.Maui.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-b5RpeRq7W9DIThL\u002BkvZtpH0aaz6NjWQ3qhZNyDZADfg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6360"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022b5RpeRq7W9DIThL\u002BkvZtpH0aaz6NjWQ3qhZNyDZADfg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 03 Sep 2025 12:43:56 GMT"},{"Name":"Link","Value":"\u003C_content/JobBoardSample.Shared/JobBoardSample.Shared.rj2vdegm0v.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6360"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022b5RpeRq7W9DIThL\u002BkvZtpH0aaz6NjWQ3qhZNyDZADfg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 04 Sep 2025 14:01:10 GMT"},{"Name":"Link","Value":"\u003C_content/JobBoardSample.Shared/JobBoardSample.Shared.rj2vdegm0v.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

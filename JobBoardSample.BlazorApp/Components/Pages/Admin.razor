@@ -4,28 +4,81 @@
 @using JobBoardSample.Shared.DTO
 @using JobBoardSample.Shared.Components
 
-<h3>Admin - Gestione Candidature</h3>
+<h3 class="title">Admin - Gestione Candidature</h3>
 
 <div>
     <input placeholder="Inserisci API Key..." type="password" @bind="ApiKey">
     <button @onclick="LoadPositions">Entra</button>
+    
+    @if(!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="error-message">@errorMessage</div>
+    }
 </div>
 <div>
-    @if (!isAdmin)
+    @if (ListPosition != null)
     {
         @foreach (var pos in ListPosition)
         {
-            <PositionCard position="pos" OnClick="HandleCardClick" />
+            <PositionCard position="@pos" OnClick="HandleCardClick" />
         }
+    }
+
+
+</div>
+
+<div class="overlay" style="@(selectedPosition != null ? "display:flex" : "display:none")">
+    @if (selectedPosition != null && applicationsList != null)
+    {
+        <div class="overlay-content">
+            <h4>Candidature per @selectedPosition.Title</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>CV</th>
+                        <th>Note</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var app in applicationsList)
+                    {
+                        <tr>
+                            <td>@app.CandidateName</td>
+                            <td>@app.Email</td>
+                            <td>
+                                @if (!string.IsNullOrEmpty(app.CvUrl))
+                                {
+                                    <a href="@app.CvUrl" target="_blank">Apri CV</a>
+                                }
+                            </td>
+                            <td>@app.Notes</td>
+                            <td>@app.Status</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <button type="button" @onclick="() => selectedPosition = null">Chiudi</button>
+        </div>
     }
 </div>
 
+
 @code {
-    private bool isAdmin = false;
     private string ApiKey;
     private Position positions;
     private List<Position>? ListPosition;
+    private List<Applications>? applicationsList;
     private Position? selectedPosition;
+    private string? errorMessage;
+
+    //CARICO POSITION INIZIALI
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadPositions();
+    }
 
     private async Task LoadPositions()
     {
@@ -33,9 +86,36 @@
         ListPosition = response?.Items ?? new List<Position>();
     }
 
-    private void HandleCardClick(Position pos)
+    private async Task HandleCardClick(Position pos)
     {
+        if (string.IsNullOrWhiteSpace(ApiKey)){
+            errorMessage = "Devi inserire prima la tua API key";
+            return;
+        }
+
         selectedPosition = pos;
+
+        await LoadApplications(pos.Id);
+    }
+
+    private async Task LoadApplications(int positionId)
+    {
+        var request = new HttpRequestMessage(
+        HttpMethod.Get,
+        $"https://localhost:7290/api/applications/by-position/{positionId}"
+        );
+
+        request.Headers.Add("X-Api-Key", ApiKey);
+        var response = await Http.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            applicationsList = await response.Content.ReadFromJsonAsync<List<Applications>>();
+        }
+        else
+        {
+            applicationsList = new List<Applications>();
+        }
     }
 
 }

@@ -47,3 +47,4 @@ C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.BlazorA
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.BlazorApp\obj\Debug\net8.0\ref\JobBoardSample.BlazorApp.dll
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.BlazorApp\obj\Debug\net8.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.BlazorApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.BlazorApp\obj\Debug\net8.0\scopedcss\Components\Pages\Admin.razor.rz.scp.css

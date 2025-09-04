@@ -24,10 +24,6 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mboni/Desktop/3SD/JobBoardProject/JobBoardSample/JobBoardSample.BlazorApp/Components/Pages/Admin.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pbi5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/mboni/Desktop/3SD/JobBoardProject/JobBoardSample/JobBoardSample.BlazorApp/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -43,6 +39,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/mboni/Desktop/3SD/JobBoardProject/JobBoardSample/JobBoardSample.BlazorApp/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-lu403d6kra
+
+[C:/Users/mboni/Desktop/3SD/JobBoardProject/JobBoardSample/JobBoardSample.BlazorApp/Components/Pages/Admin.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-zqjshw4jm6
 
 [C:/Users/mboni/Desktop/3SD/JobBoardProject/JobBoardSample/JobBoardSample.BlazorApp/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y

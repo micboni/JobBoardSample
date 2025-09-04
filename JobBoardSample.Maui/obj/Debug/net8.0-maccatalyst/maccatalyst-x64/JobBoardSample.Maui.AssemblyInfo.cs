@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobBoardSample.Maui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e77c1e7b566ad8506dc9c916551817b3fe43ea73")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+5d952ceb4b7203369e6c8e1cae1b6cb3d322b100")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobBoardSample.Maui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobBoardSample.Maui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

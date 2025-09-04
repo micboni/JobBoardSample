@@ -1,0 +1,116 @@
+.title-admin[b-zqjshw4jm6] {
+    background-color: #0078d7;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+
+.overlay[b-zqjshw4jm6] {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none; /* di default invisibile */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.overlay-content[b-zqjshw4jm6] {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn-b-zqjshw4jm6 0.3s ease-in-out;
+}
+
+
+    .overlay-content h4[b-zqjshw4jm6] {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+
+.table[b-zqjshw4jm6] {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+    .table th[b-zqjshw4jm6], .table td[b-zqjshw4jm6] {
+        border: 1px solid #ddd;
+        padding: 0.75rem;
+        text-align: left;
+    }
+
+    .table th[b-zqjshw4jm6] {
+        background-color: #f3f3f3;
+        font-weight: bold;
+    }
+
+    .table tr:nth-child(even)[b-zqjshw4jm6] {
+        background-color: #fafafa;
+    }
+
+
+    .table a[b-zqjshw4jm6] {
+        color: #0078d7;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+        .table a:hover[b-zqjshw4jm6] {
+            text-decoration: underline;
+        }
+
+
+button[b-zqjshw4jm6] {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #0078d7;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+    button:hover[b-zqjshw4jm6] {
+        background-color: #005a9e;
+    }
+
+    button[type="button"][b-zqjshw4jm6] {
+        background-color: #ccc;
+        color: #333;
+    }
+
+        button[type="button"]:hover[b-zqjshw4jm6] {
+            background-color: #999;
+        }
+
+
+@keyframes fadeIn-b-zqjshw4jm6 {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.error-message[b-zqjshw4jm6] {
+    color: red;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
