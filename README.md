@@ -16,6 +16,7 @@ il progetto è suddiviso in:
 Progetto creato per poter programmare un interfaccia web in blazor.
 il file principale che descrive il front è Home.razor,
 questo file descrive la pagina principale dell'applicazione, con una searchbox, filters e delle cards che rappresentano le posizioni lavorative aperte.
+Il secondo file è Admin ->
 
 
 3.JobBoardSample.Maui
@@ -36,6 +37,8 @@ Classi comuni nel progetto che ricprono il ruolo di Models
 DTO
 Creato per la paginazione lato server
 - PositionsResponse
+Creati per lo stato
+- UpdateStatusRequest
 
 Liste per select e options nel front
 -Localities
