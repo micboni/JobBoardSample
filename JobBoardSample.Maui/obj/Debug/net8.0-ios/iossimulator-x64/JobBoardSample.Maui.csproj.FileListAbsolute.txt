@@ -359,3 +359,4 @@ C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bi
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
 C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-ios\iossimulator-x64\staticwebassets.upToDateCheck.txt
+C:\Users\mboni\Desktop\3SD\JobBoardProject\JobBoardSample\JobBoardSample.Maui\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature

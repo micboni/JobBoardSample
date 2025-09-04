@@ -26,6 +26,53 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "JobBoardSample.Api.Controllers.ApplicationsController",
+    "Method": "UpdateApplicationsStatus",
+    "RelativePath": "api/Applications/{applicationId}/status",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "applicationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "JobBoardSample.Shared.DTO.UpdateStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JobBoardSample.Api.Controllers.ApplicationsController",
+    "Method": "GetByPosition",
+    "RelativePath": "api/Applications/by-position/{positionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "positionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JobBoardSample.Shared.Applications, JobBoardSample.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "JobBoardSample.Api.Controllers.PositionsController",
     "Method": "GetPosition",
     "RelativePath": "api/Positions",

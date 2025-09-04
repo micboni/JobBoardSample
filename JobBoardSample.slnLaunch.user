@@ -4,7 +4,8 @@
     "Projects": [
       {
         "Path": "JobBoardSample.Api\\JobBoardSample.Api.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "https"
       },
       {
         "Path": "JobBoardSample.BlazorApp\\JobBoardSample.BlazorApp.csproj",

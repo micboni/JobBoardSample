@@ -1,0 +1,41 @@
+﻿@page "/admin"
+@inject HttpClient Http
+@using JobBoardSample.Shared
+@using JobBoardSample.Shared.DTO
+@using JobBoardSample.Shared.Components
+
+<h3>Admin - Gestione Candidature</h3>
+
+<div>
+    <input placeholder="Inserisci API Key..." type="password" @bind="ApiKey">
+    <button @onclick="LoadPositions">Entra</button>
+</div>
+<div>
+    @if (!isAdmin)
+    {
+        @foreach (var pos in ListPosition)
+        {
+            <PositionCard position="pos" OnClick="HandleCardClick" />
+        }
+    }
+</div>
+
+@code {
+    private bool isAdmin = false;
+    private string ApiKey;
+    private Position positions;
+    private List<Position>? ListPosition;
+    private Position? selectedPosition;
+
+    private async Task LoadPositions()
+    {
+        var response = await Http.GetFromJsonAsync<PositionsResponse>("https://localhost:7290/api/positions");
+        ListPosition = response?.Items ?? new List<Position>();
+    }
+
+    private void HandleCardClick(Position pos)
+    {
+        selectedPosition = pos;
+    }
+
+}

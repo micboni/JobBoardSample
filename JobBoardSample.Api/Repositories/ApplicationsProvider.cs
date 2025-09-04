@@ -48,5 +48,31 @@ namespace JobBoardSample.Api.Repositories
             string json = JsonSerializer.Serialize(_listApplications );
             File.WriteAllText(_jsonPath, json);
         }
+
+
+        #region Admin
+
+        public IEnumerable<Applications> GetApplicationsByPosition(int positionId)
+        {
+            return _listApplications.Where(a => a.PositionId == positionId);
+        }
+
+
+        //cerco una candidatura, se la trovo aggiorno lo status
+        public Applications? UpdateStatus(int applicationId, string newStatus)
+        {
+            Applications? find = _listApplications.FirstOrDefault(a => a.Id == applicationId);
+
+            if(find == null)
+            {
+                return null;
+            }
+            
+            find.Status = newStatus;
+            Save();
+
+            return find;
+        }
+        #endregion
     }
 }

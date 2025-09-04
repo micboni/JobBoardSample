@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using JobBoardSample.Shared;
 using JobBoardSample.Api.Repositories;
+using System.Data;
+using JobBoardSample.Shared.DTO;
 
 namespace JobBoardSample.Api.Controllers
 {
@@ -12,11 +14,13 @@ namespace JobBoardSample.Api.Controllers
 
         private readonly ApplicationsProvider _applicationsProvider;
         private readonly PositionsProvider _positionsProvider;
+        private readonly string _adminApiKey;
 
-        public ApplicationsController(ApplicationsProvider applicationsProvider, PositionsProvider positionsProvider)
+        public ApplicationsController(ApplicationsProvider applicationsProvider, PositionsProvider positionsProvider, IConfiguration config)
         {
             _applicationsProvider = applicationsProvider;
             _positionsProvider = positionsProvider;
+            _adminApiKey = config["AdminApiKey"];
         }
 
         [HttpPost]
@@ -52,5 +56,50 @@ namespace JobBoardSample.Api.Controllers
             var allApplications = _applicationsProvider.GetAll();
             return Ok(allApplications);
         }
+
+
+        #region Admin
+
+        //elencare le candidature per una posizione
+        [HttpGet("by-position/{positionId}")]
+        public ActionResult<IEnumerable<Applications>> GetByPosition(int positionId)
+        {
+
+            if (!Request.Headers.TryGetValue("X-Api-Key", out var apiKey) || apiKey != _adminApiKey)
+            {
+                return Unauthorized(new { message = "API Key non valida o assente" });
+            }
+
+            var app = _applicationsProvider.GetApplicationsByPosition(positionId);
+            return Ok(app);
+        }
+
+
+
+        [HttpPatch("{applicationId}/status")]
+        public IActionResult UpdateApplicationsStatus(int applicationId, [FromBody] UpdateStatusRequest request)
+        {
+            if (!Request.Headers.TryGetValue("X-Api-Key", out var apiKey) || apiKey != _adminApiKey)
+            {
+                return Unauthorized(new { message = "API Key non valida o assente" });
+            }
+
+            if (request.Status != "pending" && request.Status != "rejected" && request.Status != "highlighted")
+            {
+                return BadRequest();
+            }
+
+            var app = _applicationsProvider.UpdateStatus(applicationId, request.Status);
+
+            if(app == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(app);
+        }
+
+        #endregion
+
     }
 }

@@ -103,9 +103,9 @@
     #endregion
 
     private async Task SearchPositions()
-{
-    await LoadPosition(); // LoadPosition invia la richiesta al backend con searchText, selectedDepartment, selectedLocality
-}
+    {
+        await LoadPosition(); // LoadPosition invia la richiesta al backend con searchText, selectedDepartment, selectedLocality
+    }
 
     private Applications applicationRequest = new();
 
@@ -148,9 +148,7 @@
         $"https://localhost:7290/api/positions?page={currentPage}&pageSize={pageSize}&search={searchText}&department={selectedDepartment}&location={selectedLocality}");
 
         ListPosition = response?.Items ?? new List<Position>();
-        totalPositions = response?.Total ?? 0;
-        
-        
+        totalPositions = response?.Total ?? 0; 
     }
 
     private int totalPages => (int)Math.Ceiling((double)totalPositions / pageSize);

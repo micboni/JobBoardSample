@@ -82,33 +82,24 @@ main[b-jojgud82z3] {
     }
 }
 /* /Components/Pages/Home.razor.rz.scp.css */
-/*.main-container {
+.main-container[b-upopy77elp] {
   width: 100%;
   min-height: 100vh;
   padding: 20px;
 }
 
-.filters-container {
+.filters-container[b-upopy77elp] {
   display: flex;
   flex-direction: row;
   gap: 10px;
   width: 100%;
 }
 
-.filters-container select {
+.filters-container select[b-upopy77elp] {
   flex: 1;
 }
 
-.top-bar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  gap: 10px;
-}
-
-.filters-selected {
+.filters-selected[b-upopy77elp] {
   width: 120px;
   height: 40px;
   border-radius: 8px;
@@ -117,23 +108,9 @@ main[b-jojgud82z3] {
   padding-right: 3px;
 }
 
-.search-box {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
-.cards-container {
+.cards-container[b-upopy77elp] {
   margin-top: 10%;
   height: 100vh;
-}*/
-
-.main-container[b-upopy77elp] {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #f9f9f9;
-    padding: 20px;
 }
 
 .top-bar[b-upopy77elp] {
